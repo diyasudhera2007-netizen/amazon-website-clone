@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">deliver to </p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-pin"></i>
+                    <p class="add-second"> India </p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="search amazon"class="search-input">m 
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+             <div class="languages"  style="display: inline-flex;align-items: center;gap: 6px;background: #1a1a2e;padding: 8px 12px;border-radius: 6px;font-family: Arial;">
+            <label for="language-select">EN:</label>
+            <img src="./flags.jpg" alt="language" style="width:30px; height:20px; margin-right:5px;">
+            <select id="language-select" style="background: transparent;border: none;color: white;font-size: 15px;font-weight: bold;cursor: pointer;outline: none;appearance: auto;">
+                <i class="fa-solid fa-caret-down"></i>
+                <option style="color: #1a1a2e;">French</option>
+                <option style="color: #1a1a2e;">Esapeol</option>
+                <option style="color: #1a1a2e;">Hindi</option>
+                <option style="color: #1a1a2e;">Punjabi </option>
+                <option style="color: #1a1a2e;">Spain</option>
+                <option style="color: #1a1a2e;">Nigerian</option>
+            </select>
+        </div>
+       <a href="signin.php" style="text-decoration:none; color:inherit;">
+        <div class="nav-signin border">
+            <span> hello, sign in</span></p>
+            <p class="nav-second"> account and lists </p>
+        </div>
+        </a>
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i> 
+            cart
+        </div>
+        </div>
+        <div class="panel">
+            <div class="panel-all border">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops ">
+                <p class="border">Today's Deals </p> 
+                <p class="border">Gift Cards</p>
+                <p class="border">Sell</p>
+                <p class="border">Registry</p>
+                <p class="border">Prime Video</p>
+                <p class="border">Customer Service</p>
+            </div>
+            <div class="panel-deals border">
+                <p>shop deals in electronics </p>
+            </div>
+        </div>
+    </header>
+    <div class="hero-class">
+        <div class="hero-message">
+            <p>
+                You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.<a>Click here to go to amazon.in</a>
+            </p>
+            </div>
+    </div>
+    <div class="shop-section">
+        <div class="box1 box">
+           <div class="box-content">
+             <h2>Health & Personal care</h2>
+             <a href="https://aax-eu-zaz.amazon.in/x/c/JHtsN9iwXv9U92gOdBufpJwAAAGeJTnGMwoAAAH2AQBvbm9fdHhuX2JpZDEgICBvbm9fdHhuX2ltcDIgICDlGi4u/clv1c_ek-wwnHSLcbSTLnKWU3bPVZOGL-jvm9ZBdK2_5NjuiPoujbqFcVifh-KtmZ3RgNTfqQI4sJ3_e6uZi5G8C8d1iR5l3geHq3_WiwapotndieMoUVNl9hyAGLyIllW57yGfVJBQveXgmQIksaGg1gcutLPuB0ckslsmsLp5xF6gC6PlHpWBQliqoY5a-X5-TYNMhDbJmtoXujp1OYwVzGJ8vTVihvmZka43f_3Kgm0TdGfbFXobTL7e-eQG8y5knX_kZ9ghKwpbBiYiPGwTg4-pCUDHVP6KZdjZrMAuZe4raZh3fL9AWJMW0daVP3lNttBa8L9Cu3m7XyXhDHyomCMtFvt7q84OxfhrbtjrU41N_HPOA7cNTkk28A6tEFb5mS09IFai72iJkv7Ae72HQO2xm_ewGyUmKp-BqWVEg7gzVDeNLkcLQmKbB5wjZBc3SSvhWM8aGH94KFHXnEjWHxRMq5RHOAr6br_h9dViyQ91zkKsN5-OdcmoQ0MS-FAUXuIhblUoTB8K9PJBtC-ZPrl-VB3UcWLVkfkzUUiBUS1GxyWenof_LSFKfbEvRYU94GJ-B5WcDJ7MWPqMU8XHqa5XkrmPsrcdUKGEyYL9JAJHjN2VG_YcAJXZCt2dTTsqOSbkCQJWyhdG7nXwUW7WJDOAbZexLjhFgZqNhl_lCkiqu5zb5GkZ58QWi1MDl5NKzrCdFLhUFkRb5yg6sRKt9rEKP9PM66mewy8EfN33a8yUduoGe3o51Oe7ARGYDBQzeiSBt7oIYZTNy2jv4Ru808dLfLIVDz_S5GxsIIV-WOzDcJN-nUah6dCm4d4HuiF12jnNGyGUW-ZFgzhU1DH6CQt1AzdbIHlvcm-KCbcDRFwmMw8q0em-DJjGDiqcSF5pt9kiG5ilk1BEe5xOXc0RTl4WYEgiRO2jw3DINBF-9GZzHp3uXemWAmUt4uHntWt-_eQ5NKryq4fA481QMa4wF0UblKkpN8h5k2DlcBtZd-VtYE4xyINDMxdqNhEdBNLs6UfmZCIssXx2dgg4f7l9ZZ0hpQHqc7kQrfqPZxCEoW9mg/https://www.amazon.in/stores/page/4060F84C-5409-42AE-9324-6DF0B6260E67/?_encoding=UTF8&store_ref=SB_A02295282NVSF8YU4550U-A0594063Y301VM2PRA5M&pd_rd_plhdr=t&aaxitk=24a8ce25e2442cbb593fde4c7a525728&hsa_cr_id=0&lp_asins=B088R7DCFB%2CB08956GG64%2CB088C5NDZG&lp_query=health%20and%20personal%20care&lp_slot=auto-sparkle-hsa-tetris&aref=klRN57fo5P&ref_=sbx_s_sparkle_sbtcd_hl&pd_rd_w=tFUrO&content-id=amzn1.sym.9269eab1-ae85-443b-9ec2-b2fa4ebaad05%3Aamzn1.sym.9269eab1-ae85-443b-9ec2-b2fa4ebaad05&pf_rd_p=9269eab1-ae85-443b-9ec2-b2fa4ebaad05&pf_rd_r=G6JXXFYDWNXJ7RMT3C8S&pd_rd_wg=oj0eg&pd_rd_r=5bd9746d-69ac-4034-88a6-1406df986c26">
+            <div class="box-image"> 
+                <img src="./box2_image.jpg" alt="bdjedj " style="width: 300px; height:300px; margin-top: 0.3rem;">
+            </div> 
+             <a class="see-more" href="https://www.amazon.in/stores/page/4060F84C-5409-42AE-9324-6DF0B6260E67/?_encoding=UTF8&store_ref=SB_A02295282NVSF8YU4550U-A0594063Y301VM2PRA5M&pd_rd_plhdr=t&aaxitk=24a8ce25e2442cbb593fde4c7a525728&hsa_cr_id=0&lp_asins=B088R7DCFB%2CB08956GG64%2CB088C5NDZG&lp_query=health%20and%20personal%20care&lp_slot=auto-sparkle-hsa-tetris&aref=klRN57fo5P&ref_=sbx_s_sparkle_sbtcd_hl&pd_rd_w=tFUrO&content-id=amzn1.sym.9269eab1-ae85-443b-9ec2-b2fa4ebaad05%3Aamzn1.sym.9269eab1-ae85-443b-9ec2-b2fa4ebaad05&pf_rd_p=9269eab1-ae85-443b-9ec2-b2fa4ebaad05&pf_rd_r=G6JXXFYDWNXJ7RMT3C8S&pd_rd_wg=oj0eg&pd_rd_r=5bd9746d-69ac-4034-88a6-1406df986c26">Shop from latest kitchen appliances</a>
+           </div>
+        </a>
+        </div>
+        <div class="box2 box">
+             <div class="box-content">
+             <h2>Kitchen appliances</h2>
+             <a href="https://www.amazon.com/sspa/click?ie=UTF8&spc=MToxNjk2ODYyOTAwNjM4Njg0OjE3Nzg3NzUyNDk6c3BfYXRmOjMwMDU0MTQzMDQ1MDQwMjo6MDo6&url=%2FCUCKOO-Electric-Heating-Pressure-Cooker%2Fdp%2FB01JRTZVVM%2Fref%3Dsr_1_2_sspa%3Fcrid%3D30AZNHYQR4XY3%26dib%3DeyJ2IjoiMSJ9.ykp3bhzHbWzQ1ZgOfxti9nuzaO2DfqjoZn06jGXipXZV_UiDgbLyeaKxR82m7JcjCalnbLDcol8ExRp-1urcHMILhXC9LCtJYXPaMRJZLq_Lv9GIn7g-EKeER-M_ODD2oe6DI4KTI-l0ZdW4wXVn0IBFZjgNlVKEsZ0NQxUgmzLqcclF0FfAFpzVL993Ns2y6xDceY9F_ODr2Xd6zxTfPHIqVYQLpaXYTNTdKKGUEaw.3NmD3r7cMSQgJ86-V8OU8GlK3GVceKwFy8KwklQdlrk%26dib_tag%3Dse%26keywords%3Dcooker%26qid%3D1778775249%26sprefix%3Dcoo%252Caps%252C391%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1">
+            <div class="image-1" >
+                <img src="./pressure_cooker.jpg" alt="image-1" style="width: 130px; height:130px; margin-top: 1rem">
+                <img src="./top-view-plate-coins-clovers.jpg" alt="image2" style="width:130px; height:130px; margin-left: 30px;">
+            </div>
+            <div class="image-2">
+                <img src="./top-view-cup-tea-inside-plate-cup-dark-background-tea-drink-color-photo-sweet.jpg" alt="image3" style="width:130px; height: 130px; margin-top: 40px; ">
+                <img src="./view-coffee-making-machine.jpg" alt="image4" style="width:130px; height: 130px; margin-left:30px;">
+            </div>
+            <a class="see-more">Shop from latest kitchen appliances</a>
+        </div>
+        </div>
+
+        <div class="box3 box">
+             <div class="box-content">
+             <h2>Watches you might love</h2>
+             <a href="https://www.amazon.com/sspa/click?ie=UTF8&spc=MTozNzI1ODIwMzU0MzE4Mjc2OjE3Nzg3NzUyOTc6c3BfYXRmOjMwMTE1Nzg0OTM1NzYwMjo6MDo6&url=%2FSamsung-Bluetooth-Smartwatch-Coaching-Tracking%2Fdp%2FB0F7PZNZQD%2Fref%3Dsr_1_1_sspa%3Fcrid%3D27EWCB1GT0B5H%26dib%3DeyJ2IjoiMSJ9.m65Th-Pll4mtUOIBrBgmf5YZzS11LQOJTKJ2B94Jdxbks575hr4HjG5QFgeaU7V6uS4H7dT1bZ6GI2DVddugrpUzS0xME8Qafa1xQqrM3xzlQsBkf6d0YJRAgWrxFg_mTjuaaTDOhnqFN6CrnoCwW58SgNkEaxXvu4KsCOmnN0zaMVRhNGZqA72aizxTXXbbPWsveWW-jDXS5IUx_zpArU6kLhmg1-37bRSf-Nv174rpCCnS0PElLAi4CusbV9AEI8wXsVyncWVn3bh0qc6ORrpDnzIUUdSI4OvUmxlmB8I.D6OAnF0j5gWTmg5Eash2FuBSUAXeA4XOKkz1xdEbrJk%26dib_tag%3Dse%26keywords%3Dwatches%26qid%3D1778775297%26sprefix%3Dwatch%252Caps%252C387%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1">
+            <div class="image-1" >
+                <img src="./watch1.jpg" alt="image-1" style="width: 130px; height:130px; margin-top: 1rem">
+                <img src="./watch3.jpg" alt="image2" style="width:130px; height:130px; margin-left: 30px;">
+            </div>
+            <div class="image-2">
+                <img src="./watch4.jpg" alt="image3" style="width:130px; height: 130px; margin-top: 40px; ">
+                <img src="./watch5.jpg" alt="image4" style="width:130px; height: 130px; margin-left:30px;">
+            </div>
+            <a class="see-more">Get watches for your loved once </a>
+        </div>
+        </div>
+
+        <div class="box4 box">
+             <div class="box-content">
+             <h2>shop at cheapest prices</h2>
+             <a href="https://www.amazon.com/sspa/click?ie=UTF8&spc=MToyODUzNTc2Mzc1OTE1NTM3OjE3Nzg3NzUzNjY6c3BfYXRmOjMwMDg3ODMxMTQxOTMwMjo6MDo6&url=%2FANRABESS-Crewneck-T-Shirt-Workout-Outfits%2Fdp%2FB0CYZPM7LZ%2Fref%3Dsr_1_2_sspa%3Fcrid%3D2UC7F5Q3GLXA1%26dib%3DeyJ2IjoiMSJ9.wYywp1MhhJ3PR0IMxPnrHaPIJiZM4ZDcUfcCcVrObvwpWLlFuyId9kABh8SMyeI9LDKlXlEQzmJWu3-ZDhsdEXYz_Y_17qrdnY_65eOBnE4Gr9cZcDvFdHodGVckXIqf_ccxYc7bkgIhaw_mCOB0MPGi-kTSRIu_ERJbnv3fGhdNX7lVfwX_ubtennI_Xhq8l9zOfUvHVS8MxPogQ4um3npvPHSzuCr_etSv8gsseFGQLXODgEmBV8w1z2oqwS8htw9bXxmcyK1IWHUoFaP3BL56C_8jK-SnQgTQ_lGTOs0.XrrM1L-3pziK-9NEesUsjONiivwuYKglpZGVgLR3Too%26dib_tag%3Dse%26keywords%3Dclothes%26qid%3D1778775365%26sprefix%3Dclothes%252Caps%252C390%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1">
+            <div class="image-1" >
+                <img src="./cloth4.jpg" alt="image-1" style="width: 225px; height:170px; margin-top: 1rem;">
+            </div>
+            <div class="image-2">
+                <img src="./cloth2.jpg" alt="image3" style="width:130px; height: 130px; ">
+                <img src="./cloth1.jpg" alt="image4" style="width:130px; height: 130px; margin-left:30px;">
+            </div>
+            <a class="see-more">Get deals on your favorite products  </a>
+        </div>
+        </div>
+
+         <div class="box5 box">
+           <div class="box-content">
+             <h2>skincare to serve your skin</h2>
+                <a href="https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo5NDMxMjkzMjQxMDM3NjY6MTc3ODc3NTQyNTpzcF9hdGY6MzAxMjMyNzIxNTE1MTAyOjowOjo&url=%2FGlow-Recipe-Watermelon-Pore-Tight-Facial%2Fdp%2FB087MW23C3%2Fref%3Dsr_1_1_sspa%3Fcrid%3D102AA6DO90OBN%26dib%3DeyJ2IjoiMSJ9.5-gZh9y9Gvt9aPmRw58dITx3sNF1-WmwlsSILU0Xagst1XFz_EMhJ1A8IEmTpNKQc22aAzTN74FG94ZTbrDJN2xAFbvB2Ekymzn4Nt4kvCcuNbU-jEy1HExPvyc-zH0k_l9dHHukjwYxlUEGzTyQR9RHN13ezIujgj1B6f2tXrWcVaAjHGiaGOX850DxsXWROgxKginW5O-mLKfnFMOmEsJdC9XTnL_kQka7X8L8-TAQJ1TTM2Ocgl6-YiZfeKXUJCrxFG-__vpOeBJ5kHAj4Zqifv1Tv71rmP6mBE_q1VE.1UW2yyBABUvIZAWlSm_pEGWwd8B9non5DdxK277SYxs%26dib_tag%3Dse%26keywords%3Dskincare%26qid%3D1778775425%26sprefix%3Dskinca%252Caps%252C380%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1">
+            <div class="image-1" >
+                <img src="./skin1.jpg" alt="image-1" style="width: 135px; height:110px; margin-top: 1rem;">
+                <img src="./skin2.jpg" alt="image2" style="width:135px; height:110px; margin-left: 30px;">
+            </div>
+            <div class="image-2">
+                <img src="./skin3.jpg" alt="image3" style="width:135px; height: 110px; margin-top: 40px; ">
+                <img src="./skin4.jpg" alt="image4" style="width:135px; height: 110px; margin-left:30px;">
+            </div>
+            <a class="see-more">Shop  for luxury skin care this summer </a>
+        </div>
+        </div>
+
+        <div class="box6 box">
+              <div class="box-content">
+             <h2> Glasses starting from $20</h2>
+              <a href="https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo4MDAzMDU0MTcxOTc2NDg5OjE3Nzg3NzU2OTM6c3BfYXRmOjIwMDAwODU3ODg1NjI2MTo6MDo6&url=%2FANRRI-Blocking-Eyestrain-Lightweight-Eyeglasses%2Fdp%2FB07GRPXNX4%2Fref%3Dsr_1_1_sspa%3Fcrid%3D8MFF7O4B77SF%26dib%3DeyJ2IjoiMSJ9.OWF0vgPUbM8NA5ttzg_Vqkx4_asvCIXd0ybep0FTSwOjCgxCMErypr5Z9q14IfO13rwawqnd_vicZEv0LBOBQIWzCk9pzjLEioeQ1JsNvg-twy_a_WEoFw2e_hnxE3PlUngK0xXNr6NosUEUIkwgXvHQLdREpZd2ohqjuHMvSZH9NemP55BnjkESn1lKQd2igsZHQiCj4dypDYE0hvj0Q3sDn4FgaKiv4KT0n5O8cLVj05bJw2jtBVTzcLWHMB3mIFhcIqXje2MpYXeQAwC6VPkwANnGMRaBnsy1SllAut8.p7kd4azqEuxRHPayK2VATjNWRVzB0gUJd4InaPRWuGI%26dib_tag%3Dse%26keywords%3Dglasses%2Bfor%2Bcomputer%2Beye%2Bprotection%26qid%3D1778775693%26sprefix%3Dglasses%2Bfor%2Bcomputer%2Beye%2Bprotection%252Caps%252C376%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1">
+            <div class="image-1" >
+                <img src="./glasses1.jpg" alt="image-1" style="width: 300px; height:180px; margin-top: 1rem;">
+            </div>
+            <div class="image-2">
+                <img src="./glasses2.jpg" alt="image3" style="width:93px; height: 85px; margin-top: 1rem;" >
+                <img src="./glasses3.jpg" alt="image4" style="width:95px; height: 85px;">
+                <img src="./glasses4.jpg" alt="image2" style="width:95px; height: 85px; margin-right: 30px;">
+            </div>
+            <a class="see-more">Shop  for clear vision  </a>
+        </div>
+        </div>
+
+        <div class="box7 box">
+             <div class="box-content">
+                <h2> Gaming Consoles</h2>
+                <a href="https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo0MzExNTMzNjY0OTY3NTc0OjE3Nzg3NzU3NDE6c3BfYXRmOjIwMDAzOTgzNzI5NzIzMTo6MDo6&url=%2FAmazon-Luna-Controller%2Fdp%2FB07P989QTJ%2Fref%3Dsr_1_1_ffob_sspa%3Fcrid%3D1I8ZQZHPZUIAY%26dib%3DeyJ2IjoiMSJ9.IY24ZFl2srW-tvtc97huVIA-YT5hl-HerS_74reaBb5_HTjqu_li6ymA3RUNLaIY0WFhvkF56TwYoEzQ9X5RxbNbSppcRLYJF5ij3Z-jOWSGLsAyrYCzn2y1UJtUWZEQNHAgaNjuSBeLdIrEnjC6x1xK58AGr5Xu6dxJO1GrBPWGMzzUU2n1uxcOZ5jIrHpxsXlP9VjUNpiwpohu7sxgiB9i6dueyvS9Ioa2Mz-GeqQ._594whWf4I-GVbhPd5XvdHgNS4EXR03VR-dSEF53eMk%26dib_tag%3Dse%26keywords%3Dgaming%2Bconsoles%26qid%3D1778775741%26sprefix%3Dgaming%2Bconsols%252Caps%252C391%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1">
+                <div class="image-2">
+                <img src="./console_image.jpg " alt="image2" style="width:300px; height: 300px; margin-right: 30px; margin-top: 1rem;">
+            </div>
+            <a class="see-more">Shop  for the latest gaming consoles </a>
+        </div>
+        </div>
+
+        <div class="box8 box">
+             <div class="box-content">
+             <h2> Gifts for tech-savvy moms</h2>
+             <a href="https://www.amazon.com/Apple-Version-Orange-Unlocked-Renewed/dp/B0FTC2PRVZ/ref=sr_1_1?crid=20WNOFGHJLRY9&dib=eyJ2IjoiMSJ9.JzvLJTCBPGMVwBTONoYBj_0kLGtuMYYs6zwsmHeEwGP2XKyktYStcdz5HfB74EEY7f2UvYSXSq-6AtfBexHH0luv86KVi5jS8tKzFmLPdx8rOyAll7G34cvIMkScrWBJ9VPuUIeas-UYYw1L4j_s-wnTjwkpslBBHgTfXdajrhXv0qMBqu0bsMwY0Edmw6IAlDS4PoWaEI3r_pTiZRsUuEWOkmMmWYbiSUwXLqcG0CI.IhcUB5T0Np7TkwgEtl6LiJ7SkKBFX_42adlaOwRSAXg&dib_tag=se&keywords=iphone+17+pro+max&qid=1778775794&sprefix=iphone%2Caps%2C384&sr=8-1">
+            <div class="image-1" >
+                <img src="./savvy1.jpg" alt="image-1" style="width: 300px; height:180px; margin-top: 1rem;">
+            </div>
+            <div class="image-2">
+                <img src="./savvy2.jpg" alt="image3" style="width:93px; height: 85px; margin-top: 1rem;" >
+                <img src="./savvy3.jpg" alt="image4" style="width:95px; height: 85px;">
+                <img src="./savvy4.jpg" alt="image2" style="width:95px; height: 85px; margin-right: 30px;">
+            </div>
+            <a class="see-more"> See all deals </a>
+        </div>
+        </div>
+        <div class="box9 box" id="box-9">
+           <div class="box-content">
+             <h2>Bestsellers in watches </h2>
+             <a href="https://www.amazon.com/Hublot-Aerofusion-Chronograph-Automatic-525-NX-0129-VR-ICC16/dp/B0788TNM5N/ref=sr_1_1?crid=3NHL80MIDP9XJ&dib=eyJ2IjoiMSJ9.FCyxmqc9hQbsePxLo3xkBk13aZdIGatZFBAwcl-N7rfuNEOOSsxF5iJlAY1W05IdrKvdEb1_6hB-XMD3Uo-urWK3hSnOk7lmdlRDeB9ZZq1T_r8arNL3P5NxmK6Xwb6eyFOLzx47WF2R3f7DpsLqE_WWPBN-LyDWr37eeW1-k9fZd0ki5ZWhkLZtJS2L96eyTnGXxxhPRIoXAmu5Fem8EfLVgKuiFQZNbp7ls-2Hxwy0f9vEy3IIkM7esDKd6TtnXlxY4HAcJGD2hQtqoveXu7p7RcA45TftjYwTzwfQNTE.bOE5RdlvCU_6Ve9BwjzGfIQVz82Au73b9UxQh6UQbl0&dib_tag=se&keywords=hublot+watch&qid=1778775889&sprefix=hublot+watc%2Caps%2C404&sr=8-1">
+            <div class="box-image" style="display:flex; overflow-y: hidden; overflow-x: auto;" >
+            <img src="./watch9.1.jpg" alt="image-9.1" style="width: 300px; height:300px; margin-top: 0.3rem;">
+            <img src="./watch9.2.jpg" alt="image-9.2" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./watch9.3.jpg" alt="image-9.3" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./watch9.4.jpg" alt="image-9.4" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./watch9.5.jpg" alt="image-9.5" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./watch9.6.jpg" alt="image-9.6" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./watch9.7.jpg" alt="image-9.6" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./watch9.8.jpg" alt="image-9.6" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./watch9.9.jpg" alt="image-9.6" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./watch9.10.jpg" alt="image-9.6" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./watch9.11.jpg" alt="image-9.6" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;"> 
+            </div>
+             <a class="see-more">Shop from latest kitchen appliances</a>
+           </div>
+            </div>
+            <div class="box10 box" id="box-9">
+        <div class="box-content">
+             <h2>Deep more into korean skincare </h2>
+              <a href="https://www.amazon.com/Beginner-Cleansing-Cleanser-Heartleaf-Niacinamide/dp/B0F384Y1KR/ref=sr_1_6?crid=L19YX5QB28HX&dib=eyJ2IjoiMSJ9.7OXrYlFGrpkPCPKtePc8ewtswuxyZAEKUDtrmSoZKf_4QoKFx28WgLyov81RM4t4fEbIF-krUIMC69r5zS5HunoF9w34HRRNX3G5Bd4lX8p1vTLQWojz7HolZhn4SmJScxoopaNagLY4UJzZrYXXGcjdhunynI-1xFTzKHK92qIidN-v5LTjjOsTpFlUivdS1kNRkGU1X3ZIsv7oGRsCJfvm9cU88ZEo-h9RkQz-xV6nCKTdqNhn-QotHkfiVnCVRhjh40vl0Cl40BvNafsKBsqIUy8dDwIJj9sUh5Hg_rA.9qnB-ssrQLTGGpStckOPQKANkKa5ObNT_unWEUF7Dyo&dib_tag=se&keywords=korean+skin+care&qid=1778775942&sprefix=korean+skin+ca%2Caps%2C383&sr=8-6">
+            <div class="box-image" style="display:flex; overflow-y: hidden; overflow-x: auto;" >
+            <img src="./skincare1.jpg" alt="image-9.1" style="width: 300px; height:300px; margin-top: 0.3rem;">
+            <img src="./skincare2.jpg" alt="image-9.2" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./skincare3.jpg" alt="image-9.3" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./skincare4.jpg" alt="image-9.4" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./skincare5.jpg" alt="image-9.5" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./skincare6.jpg" alt="image-9.6" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./skincare7.jpg" alt="image-9.6" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./skincare8.jpg" alt="image-9.6" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./skincare9.jpg" alt="image-9.6" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./skincare10.jpg" alt="image-9.6" style="width: 300px; height:300px; margin-top: 0.3rem; margin-left: 1rem;"> 
+            </div>
+            <a class="see-more">Shop from latest kitchen appliances</a>
+        </div>
+        
+    </div>
+         <div class="box1 box">
+           <div class="box-content">
+             <h2>Upgrade your furniture</h2>
+             <a href="https://www.amazon.com/sspa/click?ie=UTF8&spc=MTozMzc1ODU5OTU3NDE3Mzk1OjE3Nzg3Nzg2NDM6c3BfYXRmOjMwMTAyMTUwNjI0NjMwMjo6MDo6&url=%2FGTPLAYER-Computer-Footrest-Adjustable-360%25C2%25B0-Swivel%2Fdp%2FB0FVXRZJ12%2Fref%3Dsr_1_1_sspa%3Fcrid%3D14CC4JD9M9C6E%26dib%3DeyJ2IjoiMSJ9.wznNXjK8tleswaUua55HyoLoJwvmnG9mOCc_20mM5pyU3v15t_oV0xikRwYoTXw2ED5qHsb7neN4S9OEF7NF8Zx9S-8uXhNM50xh8UpFZDhota0spu8zmZIsrbXOHGa04gZdFyQDbK5dI6mImcXKvN8srHS3vvXe7B1edYBEAzm-PB60t3gYZVM3MUIAlWXKeugizTaOjXmOzyYawY1W25gsgLbqIWIfGrnrqKUPkoAp7Y-OOrdv-cdUbkc_l4vpy9i1lorQkQToJRNqIBexP_VMOTlk6ibzEQC--zIDl20.ulJLrDj1pwgLe_XxW7seNA5ROJeuIub3sgL8E2uq7is%26dib_tag%3Dse%26keywords%3Dgaming%2Bchair%26qid%3D1778778643%26sprefix%3Dgaming%2Bcha%252Caps%252C486%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1">
+            <div class="box-image"> 
+                <img src="./furniture.jpg" alt="bdjedj " style="width: 300px; height:250px; margin-top: 0.3rem;">
+            </div> 
+             <a class="see-more">Shop from latest furniture</a>
+           </div>
+        </div>
+        <div class="box2 box">
+             <div class="box-content">
+             <h2>Deals on popular items</h2>
+             <a href="https://www.amazon.com/dp/B0D8TNSJG3?binding=kindle_edition">
+            <div class="image-1" >
+                <img src="./deals.jpg" alt="image-1" style="width: 140px; height:130px; margin-top: 1rem">
+                <img src="./deals2.jpg" alt="image2" style="width:140px; height:130px; margin-left: 30px;">
+            </div>
+            <div class="image-2">
+                <img src="./deals3.jpg" alt="image3" style="width:140px; height: 130px; margin-top: 40px; ">
+                <img src="./book1.jpg" alt="image4" style="width:140px; height: 130px; margin-left:30px;">
+            </div>
+            <a class="see-more">Shop from latest deals</a>
+        </div>
+        </div>
+
+        <div class="box3 box">
+             <div class="box-content">
+             <h2>Finds for home </h2>
+              <a href="https://www.amazon.com/Layered-Home-Interior-Inspiration-Collected/dp/0593797698/ref=sr_1_1?crid=18RWDHY7GHILH&dib=eyJ2IjoiMSJ9.kw-Fe60XJQsm4KInwG941umldSByMISn-X1Pf9NOxxgXrl0DqKwJEAaz7XQeQGd1AGDMS3jIbo0Ln5X1weXQw3QFDzRiHV7dcsueUBe8ZzhqRsiKvQ1AdlkWoxzRWpuSlMw3lH4EfpmcGzhQ0hhqdeqyABfNHGvF8BL8VfgMlMo3ag5CsVuDTPR_T1Ec-iDE6jJcNAU36qd7mJhOIn_FzHcP7pVHNmzSNY08tSgtZb0.poKNCnTUS16iDM101YdV9RO6c5Q4KZABLrct07uFYUs&dib_tag=se&keywords=home+finds&qid=1778778710&s=books&sprefix=home+fi%2Cstripbooks-intl-ship%2C459&sr=1-1"> 
+            <div class="image-1" >
+                <img src="./home.jpg" alt="image-1" style="width: 140px; height:110px; margin-top: 1rem">
+                <img src="./home1.jpg" alt="image2" style="width:140px; height:110px; margin-left: 30px;">
+            </div>
+            <div class="image-2">
+                <img src="./home2.jpg" alt="image3" style="width:140px; height: 110px; margin-top: 40px; ">
+                <img src="./home4.jpg" alt="image4" style="width:140px; height: 110px; margin-left:30px;">
+            </div>
+            <a class="see-more">Get home essentials at affordable prices </a>
+        </div>
+        </div>
+
+        <div class="box4 box">
+             <div class="box-content">
+             <h2>Elevate your Electronics</h2>
+            <a href="https://aax-us-east-retail-direct.amazon.com/x/c/JMCyKqHNNUbDoNuLX6fxBhkAAAGeJ3rSegEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICCmHleU/clv1c_ek-wwgfWFcbSDYHIHovrJ16WBlXzGjt1TSuG4V6Cm6-S_M7h0iN75zfM662-4GZKS44PPWjLdsw0nmFeYJB1Y4RGwHNBRWXeS1HkdxjWF9ypKqI87h3qD1h4o7_3zCBlGe6UguUyAfYryAFrSCXn_N_jgL2d83Vp08NywqGn0axQkHvZy3Xq7lkycmlu__5Bg_6Tkn_TKhPoDB7l80mo1PnTDXKpZFUkV4UEh-E5BajlrMIUCfwVZuW2W7dG3QpRqZ_pwVJUrTu92sKCz8sz7AeZHyWMBN8vHyVYTGpdmJjqjpYd4s4E1EqMZ1aPwt8Ta6HLprTBMNcYScMB_vPc8uBmsPFBlfy4s115Is89v7Weyby0f1aFZfFsUxsNpRLywtdOgN8xYTnH_koP2UGxqxuHs6OgqaRj7LRx1zeVMvNv8AgVur0Mov2vtX0PGYrqwgEQfwuiqgVYDyo-Ax7bZ5W6WltnxS5jgS_QyeFRriuDaoOaZf0JRVBoIFC8NbZCnnNQXNlvUK8K394ey4fBbtjRlfr642guTSq_1Nn1LpfJ1aKFDBeOXFaedu9FqWbCZ0pmToFU90shphtnoSlC2C-lhykWs-X9w1z7bGoE5lh24al9B1Sh6FkLWXw3Gv96S6n0Wb-07gN9J9u19tphV0vtLNBob6gwu1JL_lubfpToz-KvzueScTpF4DUBzheA1yQcikkIpTaqN9qzVQFUVraXyv7qrCS4TJr-3I9QwwPBev5LSDkMOIIPXdLXlkj0Jqq9hzq_wdeHZEd0tgDm11wcDHAyQg4K9ogoymQWtDrGj-p7Zzras-ZLe3D45kgxTh6b4-jvh4YsmCKjRQ_j5QEqb8Drm73KKORswv6cb6hdUfS-IY9kPQMKGmCmiD3Mu6vj0kMFAqk3TsSSUsP5HtabWAcO8X3Nx6Ci1L1nibppE7xS9UEMdQDIZbwVamWLFTYP7t9zSwotAbeUcTCs_hpmivvV3ciw9O8ZfMNUdckt5Hv-12-7MuoxdWmA7yeHV3IBZPZbi0iHaz39LqMyio97HZvjg2QprsQQEIxatl44KaPgO_j564Ia5Dj4hHg/https://www.amazon.com/gp/aw/d/B0C6S6TPRH/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=16d333b14359a584e0fe8a28894368fe&hsa_cr_id=0&qid=1778778820&sr=1-1-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_0_title&pd_rd_w=weYEg&content-id=amzn1.sym.d3360101-5266-4e0e-8e4a-de7eb0be6ed9%3Aamzn1.sym.d3360101-5266-4e0e-8e4a-de7eb0be6ed9&pf_rd_p=d3360101-5266-4e0e-8e4a-de7eb0be6ed9&pf_rd_r=WFGBRRNADQVWT98X2BR8&pd_rd_wg=kP8sl&pd_rd_r=8f0bdd30-f492-469b-87a0-1467069155e3"> 
+            <div class="image-1" >
+                <img src="./elec1.jpg" alt="image-1" style="width: 140px; height:110px; margin-top: 1rem">
+                <img src="./elec2.jpg" alt="image2" style="width:140px; height:110px; margin-left: 30px;">
+            </div>
+            <div class="image-2">
+                <img src="./elec3.jpg" alt="image3" style="width:140px; height: 110px; margin-top: 40px; ">
+                <img src="./elec4.jpg" alt="image4" style="width:140px; height: 110px; margin-left:30px;">
+            </div>
+            <a class="see-more">Get deals on your favorite electronics  </a>
+        </div>
+        </div>
+
+         <div class="box5 box">
+           <div class="box-content">
+             <h2>Gear up to get fit at low price</h2>
+            <a href="https://aax-us-east-retail-direct.amazon.com/x/c/JMCyKqHNNUbDoNuLX6fxBhkAAAGeJ3rSegEAAAH2AQBvbm9fdHhuX2JpZDYgICBvbm9fdHhuX2ltcDIgICCmHleU/clv1c_ek-wwgfWFcbSDYHIHovrJ16WBlXzGjt1TSuG4V6Cm6-S_M7h0iN75zfM662-4GZKS44PPWjLdsw0nmFeYJB1Y4RGwHNBRWXeS1HkdxjWF9ypKqI87h3qD1h4o7_3zCBlGe6UguUyAfYryAFrSCXn_N_jgL2d83Vp08NywqGn0axQkHvZy3Xq7lkycmlu__5Bg_6Tkn_TKhPoDB7l80mo1PnTDXKpZFUkV4UEh-E5BajlrMIUCfwVZuW2W7dG3QpRqZ_pwVJUrTu92sKCz8sz7AeZHyWMBN8vHyVYTGpdmJjqjpYd4s4E1EqMZ1aPwt8Ta6HLprTBMNcYScMB_vPc8uBmsPFBlfy4s115Is89v7Weyby0f1aFZfFsUxsNpRLywtdOgN8xYTnH_koP2UGxqxuHs6OgqaRj7LRx1zeVMvNv8AgVur0Mov2vtX0PGYrqwgEQfwuiqgVYDyo-Ax7bZ5W6WltnxS5jgS_QyeFRriuDaoOaZf0JRVBoIFC8NbZCnnNQXNlvUK8K394ey4fBbtjRlfr642guTSq_1Nn1LpfJ1aKFDBeOXFaedu9FqWbCZ0pmToFU90shphtnoSlC2C-lhykWs-X9w1z7bGoE5lh24al9B1Sh6FkLWXw3Gv96S6n0Wb-07gN9J9u19tphV0vtLNBob6gwu1JL_lubfpToz-KvzueScTpF4DUBzheA1yQcikkIpTaqN9qzVQFUVraXyv7qrCS4TJr-3I9QwwPBev5LSDkMOIIPXdLXlkj0Jqq9hzq_wdeHZEd0tgDm11wcDHAyQg4K9ogoymQWtDrGj-p7Zzras-ZLe3D45kgxTh6b4-jvh4YsmCKjRQ_j5QEqb8Drm73KKORswv6cb6hdUfS-IY9kPQMKGmCmiD3Mu6vj0kMFAqk3TsSSUsP5HtabWAcO8X3Nx6Ci1L1nibppE7xS9UEMdQDIZbwVamWLFTYP7t9zSwotAbeUcTCs_hpmivvV3ciw9O8ZfMNUdckt5Hv-12-7MuoxdWmA7yeHV3IBZPZbi0iHaz39LqMyio97HZvjg2QprsQQEIxatl44KaPgO_j564Ia5Dj4hHg/https://www.amazon.com/gp/aw/d/B0C6S6TPRH/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=16d333b14359a584e0fe8a28894368fe&hsa_cr_id=0&qid=1778778820&sr=1-1-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_0_title&pd_rd_w=weYEg&content-id=amzn1.sym.d3360101-5266-4e0e-8e4a-de7eb0be6ed9%3Aamzn1.sym.d3360101-5266-4e0e-8e4a-de7eb0be6ed9&pf_rd_p=d3360101-5266-4e0e-8e4a-de7eb0be6ed9&pf_rd_r=WFGBRRNADQVWT98X2BR8&pd_rd_wg=kP8sl&pd_rd_r=8f0bdd30-f492-469b-87a0-1467069155e3"> 
+            <div class="image-1" >
+                <img src="./fit1.jpg" alt="image-1" style="width: 135px; height:100px; margin-top: 1rem;">
+                <img src="./fit2.jpg" alt="image2" style="width:135px; height:100px; margin-left: 30px;">
+            </div>
+            <div class="image-2">
+                <img src="./fit3.jpg" alt="image3" style="width:135px; height: 100px; margin-top: 40px; ">
+                <img src="./fir4.jpg" alt="image4" style="width:135px; height: 100px; margin-left:30px;">
+            </div>
+            <a class="see-more">Shop  for fitness gear  </a>
+        </div>
+        </div>
+
+        <div class="box6 box">
+              <div class="box-content">
+             <h2> Level up your beauty routine</h2>
+              <a href="https://www.amazon.com/sspa/click?ie=UTF8&spc=MToxMjA0NzMzNjQ0NTUwMDQ4OjE3Nzg3NzkwMjQ6c3BfYXRmOjMwMTEyNjQ1NzIxODIwMjo6MDo6&url=%2FSummer-Fridays-Jet-Under-Patches%2Fdp%2FB0F19YY96Z%2Fref%3Dsr_1_2_sspa%3Fcrid%3D3T06ZEH84ZTZX%26dib%3DeyJ2IjoiMSJ9.cq6315R20i7129gqXTVXszXJMsWXm4ErSPW5P40fWJKCqjZHgX5jKBvw1Xb-bebRrlt6giUru-IrEVY15DJu-sfRXssMAXgE8-3vBpkbowOswNV3288HxyXY3_4p3IPdMkcMJDEvGqPX3XQv3oB0KnADxSTx9_lZP3l2cmNXfxIMlC52EjorHYY1rqahSBzDpghu2947cV5OW-cfL87KIsv4suf5IBcAurk8WE1j8IB2OVkEfcFPbKOQMJc-HX6LNH6nt1z2n3iNToH-idX_4UrSh2Q8z4i7RWjp9GMgW4A.K_MQVh0o-82nmJero-Zzv7xt_pTpOJkVggyxLZ5-8xk%26dib_tag%3Dse%26keywords%3Dsephora%26qid%3D1778779024%26sprefix%3Dsephpra%252Cstripbooks-intl-ship%252C639%26sr%3D8-2-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1">
+            <div class="image-1" >
+                <img src="./beauty1.jpg" alt="image-1" style="width: 135px; height:100px; margin-top: 1rem;">
+                <img src="./beauty2.jpg" alt="image2" style="width:135px; height:100px; margin-left: 30px;">
+            </div>
+            <div class="image-2">
+                <img src="./beauty3.jpg" alt="image3" style="width:135px; height: 100px; margin-top: 40px; ">
+                <img src="./beauty4.jpg" alt="image4" style="width:135px; height: 100px; margin-left:30px;">
+            </div>
+            <a class="see-more">Shop for beauty products </a>
+        </div>
+        </div>
+
+        <div class="box7 box">
+             <div class="box-content">
+                <h2> Pick up where you left off</h2>
+                <a href="https://www.amazon.com/sspa/click?ie=UTF8&spc=MTo1Njc3MzA5MjM5MTYzMDgyOjE3Nzg3NzkxMjc6c3BfYXRmOjMwMTI3MDk4MjIwNjMwMjo6MDo6&url=%2FNEGTTE-Cute-Cherry-Keychain-Charm%2Fdp%2FB0FS6R6NX2%2Fref%3Dsr_1_1_sspa%3Fcrid%3DAM3565IHONG4%26dib%3DeyJ2IjoiMSJ9.gVVXd_ITLDXjDduieOPjqbhduR6NwS1FN-xKXCm9c6A7coXVbBusRWwW5aVOoOa3Nsh0qK7-qlfuins94RnEmTQn0dqMy2GR8jI6Sa0Lv8ZEoha4plyAlNAwQoduDZqM1UaVrkcs31dSP6GCK7ZE_gbJynhVpHFnU-lN81-szuXlczdse2YGJ_M9_FLr59Xm-esURhdZVx2Z1TFwjG6PE7WV4_JKe2qwEb3LgOIMpK2jHLJ77ggRLCLgyFTssPjHtqramC-o0U9PNsofqRqbA6gVyvBAXhr7cBwGZL1u_q0.hK1Gal_bph4dzXGiJl3jKQL5zF1sLLs-tCv4dFdCwk8%26dib_tag%3Dse%26keywords%3Dbag%2Bcharms%26qid%3D1778779127%26sprefix%3Dbag%2Bchar%252Caps%252C476%26sr%3D8-1-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9hdGY%26psc%3D1">
+                <div class="image-2">
+                <img src="./left1.jpg " alt="image2" style="width:300px; height: 300px; margin-right: 30px; margin-top: 1rem;">
+            </div>
+            <a class="see-more">Shop where you left off </a>
+        </div>
+        </div>
+
+        <div class="box8 box">
+             <div class="box-content">
+             <h2> Most-loved travel essentials</h2>
+              <a href="https://www.amazon.com/Amazon-Basics-Travel-Laptop-Backpack/dp/B0CZ1S8T3X/ref=sr_1_3?crid=1RVH14WF8IDEF&dib=eyJ2IjoiMSJ9.rK33c8xHgAaRCOgN8rax5Dh_ehYM7m8VM-BiTJ-arXVbemWRMWnHgNnBOFsM96LNm44Gb9S8qHVt_24TpPMOu_t2Eaxjz27iBIQbNi43XpE-JPfO5jATUeDsB5mn0V5toYpIpohVDcUVNHaM0LOH8Td93OAuNZqEBY6xXM6lm_D2nLnUO310W6taUKuVBDHCeE8e5aqUrUhi0ubtbySbgCYDCGfwmxurGxjn87zrVlg.HYmgIzQ5uUNbQNowyXJqJiJt7ezgIfNbmik9SsyxLwc&dib_tag=se&keywords=backpacks&qid=1778779710&sprefix=bagpac%2Caps%2C453&sr=8-3">
+            <div class="image-1" >
+                <img src="./travel1.jpg" alt="image-1" style="width: 300px; height:180px; margin-top: 1rem;">
+            </div>
+            <div class="image-2">
+                <img src="./travel2.jpg" alt="image3" style="width:93px; height: 85px; margin-top: 1rem;" >
+                <img src="./travel3.jpg" alt="image4" style="width:95px; height: 85px;">
+                <img src="./travel4.jpg" alt="image2" style="width:95px; height: 85px; margin-right: 30px;">
+            </div>
+            <a class="see-more">Shop for travel essentials </a>
+        </div>
+    </div>
+            <div class="box9 box" id="box-9">
+           <div class="box-content">
+             <h2>More items to consider </h2>
+              <a href="https://aax-us-east-retail-direct.amazon.com/x/c/JKGHNy7qI_Wm8G4UDUBv8GoAAAGeJ4ncbgEAAAH2AQBvbm9fdHhuX2JpZDcgICBvbm9fdHhuX2ltcDIgICA8bU5x/clv1c_ek-wggHSLdbWjBC1cMOdwQMJ7YgxVppnBUX9cE3lCSvKdYX97tm_7uvAlfFWrPZ3KJjhmVd5ZLgx-Xuso3nvQSvyT-A6siSPmtni_a7GCvwiLSJa9SlmAWQQymmUdGkdmlpdZJkTGv3k2QdZCesuO9DVhL0c4B2Kw0WSDQULjBQj_ijZV9rUd9L_7rraxlsonf2nzEGfCSUYmWca8kn4yDdfVml8dEdEVoaEgIG7XvcxG2zLctO0JWyNihj_xAJTDGy_kz2WGZKw4pxxSv6J8cH4ExtxhY9M1Tzn5nLzbbQ3PJv6h5YnWLcMn6lS8K1_y-KosIyF9fuYwdWzCmXx3PFJSnGW2h0onE2Zyh6jC3ghUELlvmT5PETtiTnMLmwRjfkAmpP-6R5vz0IVkuX0QhHkVOUYzDZl_5GZwQh8JIsfvAi1h7a946tnUVdC4uWx6kFV0NcdF-kDIB8EA0rG5zjtZcWF247gLhBsxDd2ovjhFFOMeytYO_eFKcBgcbC1Okv1YdmYNAhU9l1fRW0zZgcBje2YJJCc0l0W7ldR5HUgF049O09ewfMxlYJxM6CwPEfa_YL-xVPaTQX1znfFd_oyt2DYNCmaPEeOs5n35HufZlgRpSfODGUICKG6WQUnJ3P9E_fjyN7wAi5nKvOqbIcT-p2JNnZCZOeRFPFkvewr3ItmrQKr4xUMu-39CAg2WcfGu9LZ7Ig-acyPP7ppKX50VvR1ImZEgj4QOYPbM6cSV5rSn8PubxXrRfQqgeiCBKga-j23meff4wmC3FottuupMvR-ZNG09YlpWv8lEzrUWf7P19u1121jXCT84W6hXVqS9rdpiJt4MOKuRy2GEpeRe16m-db91hvYdmWDGG4G4DYlggDCLU157cnHTw21fF5smOG-Drd03WcG0cvhouEnRLDAlyvS_VG6zRCvXiVRM4YIeAI1RZvhpMmSWYQ-xEkwWYAICmBtLWCil6cnQqYrAVZjTEyRVwUkzABnnTMXQkFnwv3GssYGig3LG6rPC-GpZpvdE2VzyFK0VF8y5-n00ZzyDvAHHJBtpMFtmNu-e69DnRQgBrx0IJWT1GaI/https://www.amazon.com/gp/aw/d/B08LG9B98V/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=65cadafe4ae5cdc4bca8b5bb7f046341&hsa_cr_id=0&qid=1778779806&sr=1-1-f02f01d6-adaf-4bef-9a7c-29308eff9043&ref_=sbx__sbtcd2_asin_0_title&pd_rd_w=O39Dd&content-id=amzn1.sym.d3360101-5266-4e0e-8e4a-de7eb0be6ed9%3Aamzn1.sym.d3360101-5266-4e0e-8e4a-de7eb0be6ed9&pf_rd_p=d3360101-5266-4e0e-8e4a-de7eb0be6ed9&pf_rd_r=TS7XENXN370AABMJ6SB2&pd_rd_wg=aNfo7&pd_rd_r=0ab1cdec-7dd7-42e5-a13e-b831c8baa08d">
+            <div class="box-image" style="display:flex; overflow-y: hidden; overflow-x: auto;" >
+            <img src="./c1.jpg" alt="image-9.1" style="width: 300px; height:250px; margin-top: 0.3rem;">
+            <img src="./c2.jpg" alt="image-9.2" style="width: 300px; height:250px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./c3.jpg" alt="image-9.3" style="width: 300px; height:250px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./c4.jpg" alt="image-9.4" style="width: 300px; height:250px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./c5.jpg" alt="image-9.5" style="width: 300px; height:250px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./c6.jpg" alt="image-9.6" style="width: 300px; height:250px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./c7.jpg" alt="image-9.6" style="width: 300px; height:250px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./c8.jpg" alt="image-9.6" style="width: 300px; height:250px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./c9.jpg" alt="image-9.6" style="width: 300px; height:250px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./c10.jpg" alt="image-9.6" style="width: 300px; height:250px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./c11.jpg" alt="image-9.6" style="width: 300px; height:250px; margin-top: 0.3rem; margin-left: 1rem;"> 
+            </div>
+             <a class="see-more">Shop for more wall frames </a>
+           </div>
+        </div>
+        <div class="box9 box" id="box-9">
+           <div class="box-content">
+             <h2>Additional items to explore </h2>
+            <a href="https://www.amazon.com/Ardax-Jewelry-Organizer-Ceramic-Decorative/dp/B0D1M9QK3K/ref=pd_ci_mcx_mh_mcx_views_0_title?pd_rd_w=qjE9d&content-id=amzn1.sym.781fe6e1-9487-4a74-b81e-5a879e5ec273%3Aamzn1.symc.c3d5766d-b606-46b8-ab07-1d9d1da0638a&pf_rd_p=781fe6e1-9487-4a74-b81e-5a879e5ec273&pf_rd_r=TPN30B3QD1KHDTENCGE5&pd_rd_wg=uyc8n&pd_rd_r=63d61d7c-a852-469c-bef0-bd69b3e81eb4&pd_rd_i=B0D1M9QK3K">   
+            <div class="box-image" style="display:flex; overflow-y: hidden; overflow-x: auto;" >
+            <img src="./e1.jpg" alt="image-9.1" style="width: 250px; height:200px; margin-top: 0.3rem;">
+            <img src="./e2.jpg" alt="image-9.2" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./e3.jpg" alt="image-9.3" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./e4.jpg" alt="image-9.4" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./e5.jpg" alt="image-9.5" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./e6.jpg" alt="image-9.6" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./e7.jpg" alt="image-9.6" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./e8.jpg" alt="image-9.6" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./e9.jpg" alt="image-9.6" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./e10.jpg" alt="image-9.6" style="width: 250px; height:250px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./e11.jpg" alt="image-9.6" style="width: 250px; height:250px; margin-top: 0.3rem; margin-left: 1rem;"> 
+            </div>
+             <a class="see-more">Shop for accessories organizers </a>
+           </div>
+        </div>
+        <div class="box9 box" id="box-9">
+           <div class="box-content">
+             <h2>Additional items to explore </h2>
+            <a href="https://www.amazon.com/Ardax-Jewelry-Organizer-Ceramic-Decorative/dp/B0D1M9QK3K/ref=pd_ci_mcx_mh_mcx_views_0_title?pd_rd_w=qjE9d&content-id=amzn1.sym.781fe6e1-9487-4a74-b81e-5a879e5ec273%3Aamzn1.symc.c3d5766d-b606-46b8-ab07-1d9d1da0638a&pf_rd_p=781fe6e1-9487-4a74-b81e-5a879e5ec273&pf_rd_r=TPN30B3QD1KHDTENCGE5&pd_rd_wg=uyc8n&pd_rd_r=63d61d7c-a852-469c-bef0-bd69b3e81eb4&pd_rd_i=B0D1M9QK3K">   
+            <div class="box-image" style="display:flex; overflow-y: hidden; overflow-x: auto;" >
+            <img src="./p1.jpg" alt="image-9.1" style="width: 250px; height:200px; margin-top: 0.3rem;">
+            <img src="./p2.jpg" alt="image-9.2" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./p3.jpg" alt="image-9.3" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./p4.jpg" alt="image-9.4" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./p5.jpg" alt="image-9.5" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./p6.jpg" alt="image-9.6" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./p7.jpg" alt="image-9.6" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./p8.jpg" alt="image-9.6" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./p9.jpg" alt="image-9.6" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./p10.jpg"alt="image-9.6" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;">
+            <img src="./p11.jpg"alt="image-9.6" style="width: 250px; height:200px; margin-top: 0.3rem; margin-left: 1rem;"> 
+            </div>
+             <a class="see-more">Shop for accessories organizers </a>
+           </div>
+        </div>
+            
+        
+    </div>
+    
+    <footer>
+        <div class="foot-panel1">
+            back to Top 
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell products on Amazon</a>
+                <a>Sell on Amazon Business</a>
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+                <a>Host an Amazon Hub</a>
+                <a>See More Make Money with Us</a>
+            </ul>
+            <ul>
+                <p>Amazon Payment Products</p>
+                <a>Amazon Rewards Visa Signature Cards</a>
+                <a>Amazon.com Store Card</a>
+                <a>Amazon Business Card</a>
+                <a>Amazon.com Corporate Credit Line</a>
+                <a>Shop with Points</a>
+                <a>Credit Card Marketplace</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+            </ul>
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Amazon and COVID-19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacements</a>
+                <a>Manage Your Content and Devices</a>
+                <a>Amazon Assistant</a>
+                <a>Help</a>
+            </ul>
+        </div>
+        <div class="foot-panel-3">
+            <div class="logo"></div>
+        </div>
+        <div class="footer-panel5">
+        </div>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of Use & Sale</a>
+                <a>Privacy Notice</a>
+                <a>Interest-Based Ads</a>
+            <div class="copy-right">
+                <a>© 1996-2024, </a>
+                <a>Amazon.com,</a>
+                <a> Inc. or </a>
+                <a>its affiliates</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+    function searchProducts() {
+        const query = document.getElementById('searchInput').value.toLowerCase();
+        const boxes = document.querySelectorAll('.box');
+
+        boxes.forEach(box => {
+            const title = box.querySelector('h2');
+            if (title) {
+                const text = title.textContent.toLowerCase();
+                box.style.display = text.includes(query) ? 'block' : 'none';
+            }
+        });
+    }
+    </script> 
+</body>
+</html> 
